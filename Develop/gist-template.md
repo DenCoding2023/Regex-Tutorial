@@ -28,8 +28,8 @@ Literals: These are characters that match themselves literally. For example, the
 Metacharacters: Special characters that have a predefined meaning in regex. Some common metacharacters include:
 
 - . (dot): Matches any single character except newline.
-- * (asterisk): Matches zero or more occurrences of the preceding character.
-- + (plus): Matches one or more occurrences of the preceding character.
+- (*) (asterisk): Matches zero or more occurrences of the preceding character.
+- (+) (plus): Matches one or more occurrences of the preceding character.
 - ? (question mark): Matches zero or one occurrence of the preceding character.
 - | (pipe): Acts as an OR operator, matching either the expression on its left or right.
 Character Classes: A set of characters enclosed in square brackets [ ]. It matches any single character that is within the class. For example, [aeiou] matches any vowel.
@@ -45,24 +45,30 @@ Negated Character Classes: Similar to character classes, but matches any charact
 - *: Matches zero or more occurrences of the preceding character or group.
 - ?: Matches zero or one occurrence of the preceding character or group.
 ### OR Operator
-@: The "@" symbol matches itself, ensuring it exists in the email address.
-.: The backslash is used to escape the dot (.) character, allowing it to match itself. This ensures a dot separates the domain name from the top-level domain.
+- @: The "@" symbol matches itself, ensuring it exists in the email address.
+- .: The backslash is used to escape the dot (.) character, allowing it to match itself. This ensures a dot separates the domain name from the top-level domain.
 ### Character Classes
-
+- [a-z0-9_.-]: Matches lowercase letters, digits, underscores, dots, and hyphens.
+- [\da-z.-]: Matches lowercase letters, digits, dots, and hyphens. "\d" represents any digit character.
 ### Flags
-
+- Flags are optional modifiers that can be applied to the regex pattern. Common flags include:
+- i: Case-insensitive matching.
+- g: Global matching (find all occurrences).
+- m: Multiline matching.
 ### Grouping and Capturing
-
+- (): Parentheses group characters or expressions together.
+- Capturing groups (e.g., ([a-z0-9_\.-]+)) capture and remember the matched content for later use.
 ### Bracket Expressions
-
+- [a-z.]: Matches lowercase letters and dots. The dot here is not a metacharacter, so it matches itself literally.
 ### Greedy and Lazy Match
-
+- By default, quantifiers are greedy and match as much as possible. To make them lazy, add a "?" after the quantifier (e.g., *? or +?).
 ### Boundaries
-
+- \b: Matches a word boundary, ensuring the email address is a standalone word.
 ### Back-references
-
+- \1, \2, etc.: Refers back to captured groups. For example, \1 refers back to the first capturing group.
 ### Look-ahead and Look-behind
-
+- (?=...): Positive lookahead. Matches a group after the main expression without including it in the result.
+- (?!...): Negative lookahead. Matches if the group does not follow the main expression.
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Dennis Luciano, I am recent student at the fullstack web EX program. You can find moore of my work and contributions on GitHub profile: https://github.com/DenCoding2023/Regex-Tutorial.git
