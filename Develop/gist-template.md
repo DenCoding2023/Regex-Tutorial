@@ -23,19 +23,6 @@ This tutorial focuses on a specific Regex Pattern: /^([a-z0-9_.-]+)@([\da-z.-]+)
 ## Regex Components
 Regex components, also known as regular expression metacharacters or constructs, are the building blocks that form a regular expression pattern. Each component serves a specific purpose in defining the rules for matching and manipulating text patterns. Here are some common regex components:
 
-Literals: These are characters that match themselves literally. For example, the regex a will match the letter "a" in the text.
-
-Metacharacters: Special characters that have a predefined meaning in regex. Some common metacharacters include:
-
-- . (dot): Matches any single character except newline.
-- (*) (asterisk): Matches zero or more occurrences of the preceding character.
-- (+) (plus): Matches one or more occurrences of the preceding character.
-- ? (question mark): Matches zero or one occurrence of the preceding character.
-- | (pipe): Acts as an OR operator, matching either the expression on its left or right.
-Character Classes: A set of characters enclosed in square brackets [ ]. It matches any single character that is within the class. For example, [aeiou] matches any vowel.
-
-Negated Character Classes: Similar to character classes, but matches any character not present in the set. Represented as [^ ]. For example, [^0-9] matches any non-digit character.
-
 ### Anchors
 - ^: The caret symbol anchors the match to the start of the text, ensuring the email address is found at the beginning of the string.
 - $: The dollar sign anchors the match to the end of the text, ensuring the email address is found at the end of the string.
