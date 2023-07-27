@@ -58,4 +58,4 @@ Regex components, also known as regular expression metacharacters or constructs,
 - (?!...): Negative lookahead. Matches if the group does not follow the main expression.
 ## Author
 
-This tutorial was created by Dennis Luciano, I am recent student at the fullstack web EX program. You can find moore of my work and contributions on GitHub profile: https://github.com/DenCoding2023/Regex-Tutorial.git
+This tutorial was created by Dennis Luciano, I am recent student at the fullstack web EDX program. You can find moore of my work and contributions on GitHub profile: https://github.com/DenCoding2023/Regex-Tutorial.git
